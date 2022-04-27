@@ -13,21 +13,21 @@ public class Data {
     public static void insertMood(String moodRating,  User user) {
         int moodNum = Integer.parseInt(moodRating);
         String userId = user.email;
-        DatabaseApiInsert.createMoodEntry(DatabaseConnection.getInstance().getCon(), moodNum, LocalDateTime.now(), userId);
-
+        DatabaseApiInsert.createMoodEntry(DatabaseConnection.getInstance().connect(), moodNum, LocalDateTime.now(), userId);
+        DatabaseConnection.getInstance().disconnect();
     }
 
     public static void insertTension(String tensionRating, User user) {
         int tensionNum = Integer.parseInt(tensionRating);
         String userId = user.email;
-        DatabaseApiInsert.createTensionEntry(DatabaseConnection.getInstance().getCon(), tensionNum, LocalDateTime.now(), userId);
-
+        DatabaseApiInsert.createTensionEntry(DatabaseConnection.getInstance().connect(), tensionNum, LocalDateTime.now(), userId);
+        DatabaseConnection.getInstance().disconnect();
     }
 
     public static void insertJournal(String journalText, User user) {
         String userId = user.email;
-        DatabaseApiInsert.createJournalEntry(DatabaseConnection.getInstance().getCon(), journalText, LocalDateTime.now(), userId);
-
+        DatabaseApiInsert.createJournalEntry(DatabaseConnection.getInstance().connect(), journalText, LocalDateTime.now(), userId);
+        DatabaseConnection.getInstance().disconnect();
     }
 
 } 

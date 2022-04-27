@@ -33,7 +33,7 @@ public class WelcomeController {
             stage.setScene(scene);
             stage.show();
         } else {
-            auth.logError();
+            //auth.logError();
             auth.resetLogFields(emailField, passwordField);
         }
     }
