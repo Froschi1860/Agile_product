@@ -16,9 +16,9 @@
                         <Font size="30.0" />
                      </font>
                   </Label>
-                  <Slider layoutX="224.0" layoutY="181.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" prefHeight="14.0" prefWidth="317.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="5.0" />
-                  <Slider layoutX="224.0" layoutY="264.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" prefHeight="14.0" prefWidth="322.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="5.0" />
-                  <Button layoutX="296.0" layoutY="361.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="177.0" text="Submit" textFill="#bf9270" />
+                  <Slider fx:id="moodSlider" layoutX="224.0" layoutY="181.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" prefHeight="14.0" prefWidth="317.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="5.0" />
+                  <Slider fx:id="tensionSlider" layoutX="224.0" layoutY="264.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" prefHeight="14.0" prefWidth="322.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="5.0" />
+                  <Button layoutX="296.0" layoutY="361.0" mnemonicParsing="false" onAction="#onSubmitBtnClick" prefHeight="45.0" prefWidth="177.0" text="Submit" textFill="#bf9270" />
                   <Label layoutX="367.0" layoutY="147.0" text="Mood" textFill="#bf9270" />
                   <Label layoutX="364.0" layoutY="239.0" text="Tension" textFill="#bf9270" />
                   <Button layoutX="627.0" layoutY="68.0" mnemonicParsing="false" onAction="#onLogoutBtnClick" text="Logout" textFill="#bf9270" />
