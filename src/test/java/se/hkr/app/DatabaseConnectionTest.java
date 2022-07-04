@@ -62,7 +62,7 @@ class DatabaseConnectionTest {
     @DisplayName("Test if dsn of DatabaseConnection instance is correct with default host.")
     void testInstanceDsnWithoutArgument() {
         var instance = DatabaseConnection.getInstance();
-        assertEquals("jdbc:mariadb://project-myrmidon.duckdns.org/myrmidon?user=myrmidon_admin" +
+        assertEquals("jdbc:mariadb://localhost/myrmidon?user=myrmidon_admin" +
                 "&password=myr_ADM123", instance.getDsn());
     }
 
