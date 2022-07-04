@@ -104,7 +104,7 @@ public class AuthenticationIT {
                 SELECT *
                 FROM User
                 ORDER BY personnummer DESC
-                LIMIT 2;
+                LIMIT 1;
                 """;
         PreparedStatement stmt = DatabaseConnection.getInstance().connect().prepareStatement(sql);
         ResultSet rs = stmt.executeQuery();
