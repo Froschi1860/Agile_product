@@ -40,9 +40,9 @@ Fact of the day
 
 ## Installation
 ### Technical Information 
-The application was created with Java, Java FX, and utlilizes a MariaDB database. To install the program make sure that MariaDB is installed on your system and that the file database_ddl.sql is run to set up the necessary database schema. An executable jar-file and a .exe file for windows are available to start the application.
+The application was created with Java, Java FX, and utlilizes a MariaDB database. To install the program make sure that MariaDB is installed on your system and that the file database_ddl.sql is run to set up the necessary database schema. Sample data that can be used to generate charts is provided in the file sample_data_insert.sql. After the script is run, the database is filled with some data to be displayed. The recommended user login for the sample data is 'test1@myrmidon.com', password '11111'. Test data can be found for the first days of March 2022 and the first days of July 2022.
 
-Alternatively, the application can be opened and launched via an IDE after cloning th repository.
+The application can currently only be opened and launched via an IDE after cloning this repository. For this purpose, navigate to the src/se/hkr/app directory and run the Main.java file.
 
 
 ## License

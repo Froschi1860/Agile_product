@@ -36,7 +36,7 @@ public final class DatabaseConnection {
      * Instance contructor with default host.
      */
     private DatabaseConnection() {
-        this.host = "project-myrmidon.duckdns.org";
+        this.host = "localhost";
     }
 
     /**

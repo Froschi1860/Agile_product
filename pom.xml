@@ -166,7 +166,7 @@
             <artifactId>testfx-junit</artifactId>
             <version>4.0.15-alpha</version>
             <scope>test</scope>
-        </dependency>
+        </dependency>  
     </dependencies>
 
     <build>
